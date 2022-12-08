@@ -385,10 +385,6 @@ hr {
     margin: 0 auto;
   }
 
-  .footer-section {
-    margin-bottom: 3rem;
-  }
-
   .footer-heading {
     flex: 1 0 90%;
     margin: 0.2rem auto;
@@ -405,25 +401,16 @@ hr {
   }
 
   .input-1 {
-    width: 48%;
+    width: 47%;
     margin-bottom: 0;
     margin-right: 0;
   }
 
   .form-section textarea {
-    height: 3rem;
+    height: 4rem;
   }
 
   .footer-media {
     flex: 1 0 90%;
-    margin: 0.1rem auto auto;
-  }
-
-  .footer-media p {
-    margin: 0.1rem auto;
-  }
-
-  .footer-media a {
-    margin: 0.2rem 1rem;
   }
 }

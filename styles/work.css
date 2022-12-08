@@ -302,4 +302,37 @@ hr {
   .header-container h1 img {
     max-width: 100%;
   }
+
+  hr {
+    margin: 0 auto;
+  }
+
+  .footer-heading {
+    flex: 1 0 90%;
+    margin: 0.2rem auto;
+  }
+
+  .footer-form {
+    flex-flow: row;
+    flex: 1 0 90%;
+  }
+
+  .input {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .input-1 {
+    width: 47%;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .form-section textarea {
+    height: 4rem;
+  }
+
+  .footer-media {
+    flex: 1 0 90%;
+  }
 }
