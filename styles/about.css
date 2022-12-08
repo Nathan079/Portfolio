@@ -1,0 +1,311 @@
+/* PAGE SETUP */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  background-image: url(../images/home-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.select {
+  user-select: none;
+  --webkit-user-select: none;
+  --moz-user-select: none;
+  --ms-user-select: none;
+}
+
+
+/* NAVIGATION BAR */
+
+
+.navbar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #cadae759;
+  z-index: 1;
+}
+
+.nav-logo {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+.navbar-container h3 {
+  margin-right: auto;
+}
+
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  align-items: center;
+  margin: auto 1.5rem;
+  padding: 0;
+}
+
+.links li {
+  margin-left: 1.1rem;
+}
+
+.links a,
+p {
+  position: relative;
+  text-decoration: none;
+  color: #111111;
+  font-size: 1rem;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  border-radius: 1rem;
+  background-color: #FA7C00;
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.links a:hover::after {
+  transform: scale(1);
+}
+
+
+
+/* HEADER SECTION */
+
+
+.header-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header-container h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.header-container img {
+  margin: 2rem;
+  width: 15rem;
+  border-radius: 10rem;
+}
+
+.header-section {
+  margin: 9rem auto 0;
+}
+
+
+
+/* MAIN SECTION */
+
+
+.paragraph {
+  margin: 0;
+}
+
+
+
+/* FOOTER SECTION PAGE 3 */
+
+
+hr {
+  width: 75%;
+  border-top: solid #fffaf6e5 0.1rem;
+  border-bottom: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto 10rem;
+}
+
+.footer-section {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto 10%;
+  background: #303030F9;
+  border-radius: 0.4rem;
+}
+
+.footer-heading {
+  flex: 0 0 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.footer-form {
+  flex: 0 0 45%;
+  margin: 0.5rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4rem;
+}
+
+.form-section input {
+  width: 100%;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 0;
+  background: #fffaf6e5;
+}
+
+.form-section input:hover {
+  background: #fffaf6;
+}
+
+.form-section textarea {
+  resize: none;
+  border-radius: 0.2rem;
+  height: 10rem;
+  width: 100%;
+  outline: none;
+  background: #fffaf6e5;
+  font-family: Lato, sans-serif;
+}
+
+.form-section textarea:hover {
+  background: #fffaf6;
+}
+
+.form-section button {
+  flex: 0 0 48%;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.2rem;
+  background: #FA7C0060;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background: #FA7C00;
+}
+
+.footer-media {
+  flex: 0 0 50%;
+  margin: 0.5rem auto auto;
+  text-align: center;
+}
+
+.footer-media p {
+  margin: 0.3rem auto 1.5rem;
+  color: #fffaf6e5;
+}
+
+.footer-media a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 1rem;
+}
+
+.footer-media a:hover {
+  color: #FA7C00;
+}
+
+.footer-media img {
+  width: 2rem;
+  margin: 0;
+}
+
+.footer-media span {
+  display: block;
+  margin: 0.5rem auto 0.5rem;
+  color: #fffaf635;
+}
+
+
+
+/* RESPONSIVENESS ELEMENTS */
+
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  width: 1.4rem;
+  height: 1.5rem;
+}
+
+.bar {
+  width: 100%;
+  height: 0.1rem;
+  border-radius: 1rem;
+  background-color: #FA7C00;
+  padding: 0.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin-right: 1.5rem;
+    z-index: 1;
+  }
+
+  .active {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .links {
+    flex: 1 0 100%;
+    margin: -1rem 0 0 0.3rem;
+  }
+
+  .navbar-bg {
+    display: flex;
+    flex-flow: row wrap;
+    background: #cadae759;
+  }
+
+  .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon #bar-top {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  .icon #bar-middle {
+    display: none;
+  }
+
+  .icon #bar-bottom {
+    transform: rotate(-45deg);
+  }
+
+  .header-container h1 img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>nathanarmstrong</title>
+
+    <!-- FAVICON ICON -->
+    <link rel="icon" href="images/portfolio-logo-light.png">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=League Spartans|Lato">
+</head>
+
+
+<body>
+
+    <nav class="navbar-container">
+        <img class="nav-logo select" src="images/portfolio-logo-light.png" draggable="false" alt="">
+        <h3 class="select">nathanarmstrong</h3>
+        <div class="menu-toggle select" onclick="menuOnClick()">
+            <span class="bar" id="bar-top"></span>
+            <span class="bar" id="bar-middle"></span>
+            <span class="bar" id="bar-bottom"></span>
+        </div>
+        <ul class="links select">
+            <li><a href="index.html">home</a></li>
+            <li>
+                <p class="select" href="#">|</p>
+            </li>
+            <li><a href="work.html">work</a></li>
+            <li>
+                <p class="select" href="#">|</p>
+            </li>
+            <li><a href="#bottom">contact</a></li>
+            <li>
+                <p class="select" href="#">|</p>
+            </li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="scroll-container">
+
+        <header class="header-container" id="scroll-section">
+            <h1><img src="images/title-logo-grey.png" alt="web-site-header-img" draggable="false"></h1>
+            <a class="bg-reference"
+                href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Marek Piwnicki</a>
+        </header>
+
+
+        <main class="main-container" id="scroll-section">
+            <div class="carousel">
+                <div class="slide">
+                    <h2 class="slide-content">Leap Year Checker</h2>
+                    <p class="slide-content">One of my first projects. This little application does exactly as it says,
+                        it lets you enter a year and checks wether or not it is a leap year.
+                    </p>
+                </div>
+                <div class="slide">
+                    <h2 class="slide-content">Task Table</h2>
+                    <p class="slide-content">This application was my second project whilst learning how to code using
+                        CSS and Javascript.
+                        It is a basic to do list, allowing the user to add and remove items.
+                    </p>
+                </div>
+                <div class="slide">
+                    <h2 class="slide-content">Checkers</h2>
+                    <p class="slide-content">This project is next in the line up for me to attempt.</p>
+                </div>
+                <button class="btn-prev select carousel-btn" onclick="plusSlides(-1)">&#10094</button>
+                <button class="btn-next select carousel-btn" onclick="plusSlides(1)">&#10095</button>
+            </div>
+        </main>
+
+
+        <footer class="footer-container" id="scroll-section">
+            <a name="bottom" id="bottom"></a>
+            <section class="footer-section">
+                <div class="footer-heading">
+                    <h2>Get in Touch!</h2>
+                </div>
+                <div class="footer-form">
+                    <form action="">
+                        <div class="input">
+                            <div class="form-section input-1">
+                                <input type="text" id="fname" name="name" placeholder="Name...">
+                            </div>
+                            <div class="form-section input-1">
+                                <input type="text" id="fname" name="name" placeholder="Email...">
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <textarea name="message" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="form-section">
+                            <button>Cancel</button>
+                            <button>Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-media">
+                    <p>Location: street, city, state.</p>
+                    <p>Email: myemail@address.com</p>
+                    <p>Phone: my phone number</p>
+                    <hr>
+                    <a href="#"><img src="images/linkdin.png" alt="linkdin"></a>
+                    <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                    <hr>
+                    <span>nathanarmstrong</span>
+                    <span>©️copyright 2022-2023</span>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
